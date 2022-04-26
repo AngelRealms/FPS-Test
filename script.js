@@ -5,13 +5,13 @@ class Engine{
         this.renderer = new THREE.WebGLRenderer();
         this.renderer.setSize(window.innerWidth,window.innerHeight);
         document.body.appendChild(this.renderer.domElement);
-        this.light = new THREE.PointLight(0xffffff,0.1,10000);
+        this.light = new THREE.PointLight(0xffffff,1,10000);
         this.light.castShadow = true;
         this.light.position.set(0,100,0);
         this.scene.add(this.light);
         //this.scene.add(this.light2);
-        //this.scene.background = new THREE.Color( 0xaaccff );
-        this.scene.background = new THREE.Color( 0x0d0c2b );
+        this.scene.background = new THREE.Color( 0xaaccff );
+        //this.scene.background = new THREE.Color( 0x0d0c2b );
         this.actors = {};
         this.entities = {};
         this.objects = {};
@@ -553,7 +553,7 @@ function init(){
     let stone = textureLoader.load('assets/textures/stone.jpeg');
 
     
-    for(let i=0;i<100;i++){
+    for(let i=0;i<10;i++){
         let enemy = new Enemy(`enemy${i}`,100);
         engine.addEnemy(enemy);
         let rX = THREE.MathUtils.randInt(-50,50);
