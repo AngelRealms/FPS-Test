@@ -58,6 +58,15 @@ class Engine{
         }
         actor.object3d.removeFromParent();
     }
+    addEnemies(amount){
+        for(let i=0;i<amount;i++){
+            let enemy = new Enemy(`enemy${i}`,100);
+            engine.addEnemy(enemy);
+            let rX = THREE.MathUtils.randInt(-50,50);
+            let rZ = THREE.MathUtils.randInt(-50,50);
+            enemy.object3d.position.set(rX,1,rZ);
+        }
+    }
 }
 
 class Player{
