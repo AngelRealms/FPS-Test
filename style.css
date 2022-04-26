@@ -1,0 +1,13 @@
+.hud{
+    position: absolute;
+    color: white;
+    text-shadow: 0 0 3px black ;
+    text-align: center;
+    z-index: 100;
+    top:0px;
+    left:0px;
+    display:block;
+  }
+body{
+  margin: 0px
+}
