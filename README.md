@@ -6,7 +6,7 @@ A simple arcade shooter that is inspired by Doom and Quake -> [LIVE DEMO](https:
 
 * 0.2
     * Added framework for enemies, still heavily work in progress
-    * Removed spitfire as it did not fit with style
+    * Removed spitfire as it did not fit with the overall style of the game
     * Added minigun
     * Added sniper
     * Added preloading to improve performance
